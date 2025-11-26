@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Application Form</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .container {
+        width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+        background: hsl(0, 0%, 100%);
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #777;
+    }
+    button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>APPLICATION FORM</h1>
+
+    <p>
+        Thank you for your interest in working with us. Please check below for job opportunities
+        that meet your criteria and send your application by filling out the Job Application Form.
+    </p>
+
+    <form>
+
+        <label>* Full Name:</label>
+        <input type="text" name="fullname" placeholder="Enter your full name">
+
+        <label>* Email:</label>
+        <input type="email" name="email" placeholder="Enter your Email">
+
+        <label>* Age:</label>
+        <input type="number" name="age" placeholder="Age">
+
+        <label>Which option best describes your current role?</label>
+        <select name="role">
+            <option>Student</option>
+            <option>Employed</option>
+            <option>Freelancer</option>
+            <option>Unemployed</option>
+        </select>
+
+        <label>* Would you like to list references?</label><br>
+        <label for="1">Yes</label><input type="radio" name="ref" value="yes" id="1"> 
+        <Label for="2">No</Label><input type="radio" name="ref" value="no" id="2">
+        <br><br>
+
+        <label>Which position would you like to apply for?</label>
+        <select name="position">
+            <option>Select an option</option>
+            <option>Web Developer</option>
+            <option>Mobile Developer</option>
+            <option>Designer</option>
+            <option>Data Analyst</option>
+        </select>
+
+        <label>Which programming languages do you know?</label><br>
+        <input type="checkbox" name="langs" value="Java"> Java<br>
+        <input type="checkbox" name="langs" value="Python"> Python<br>
+        <input type="checkbox" name="langs" value="JavaScript"> JavaScript<br>
+        <input type="checkbox" name="langs" value="C++"> C++<br>
+        <input type="checkbox" name="langs" value="Swift"> Swift<br>
+        <input type="checkbox" name="langs" value="Ruby"> Ruby<br>
+        <input type="checkbox" name="langs" value=".NET"> .NET<br><br>
+
+        <label>Any Comments?</label>
+        <textarea name="comments" placeholder="Enter your comment here..." rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
